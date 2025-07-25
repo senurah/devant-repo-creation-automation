@@ -11,8 +11,8 @@ public function main(string orgName, string repoName, string isPublic, string re
         // string repo = repoName !="" ? repoName : NAME;
         // boolean isRepoPublic = isPublic == "true"? true: false;
         // boolean hasIssues = enableIssues =="true"? true:false;
-        string org = orgName !=""? orgName : "devant-test-org";
-        string repo = repoName !=""? repoName : "from-devant";
+        string org = "devant-test-org";
+        string repo = "from-devant";
         boolean isRepoPublic = false;
         boolean hasIssues = true;
 
