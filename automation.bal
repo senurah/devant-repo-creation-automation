@@ -7,10 +7,14 @@ configurable string NAME= ?;
 
 public function main(string orgName, string repoName, string isPublic, string repoDesc, string enableIssues, string pat) returns error? {
     do {
-        string org = orgName != "" ? orgName : gitORG;
-        string repo = repoName !="" ? repoName : NAME;
-        boolean isRepoPublic = isPublic == "true"? true: false;
-        boolean hasIssues = enableIssues =="true"? true:false;
+        // string org = orgName != "" ? orgName : gitORG;
+        // string repo = repoName !="" ? repoName : NAME;
+        // boolean isRepoPublic = isPublic == "true"? true: false;
+        // boolean hasIssues = enableIssues =="true"? true:false;
+        string org = orgName !=""? orgName : "devant-test-org";
+        string repo = repoName !=""? repoName : "from-devant";
+        boolean isRepoPublic = false;
+        boolean hasIssues = true;
 
         string apirUrl = string `https://api.github.com/orgs/${org}/repos`;
 
