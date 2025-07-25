@@ -1,0 +1,7 @@
+[package]
+org = "senura"
+name = "repo_creation"
+version = "0.1.0"
+
+[build-options]
+sticky = true
