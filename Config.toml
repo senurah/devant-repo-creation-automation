@@ -2,7 +2,13 @@
 [senura.repo_creation]
 gitPAT = "<PAT>"
 gitORG = "devant-test-org"
-NAME ="sample-repo-name"
+REPO_NAME ="sample-repo-name"
+IS_PUBLIC="false"
+DESC="Description"
+IS_ISSUES="true"
+
+
+
 
 # Configuration file for "repo_creation"
 # 
