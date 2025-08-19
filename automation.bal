@@ -2,33 +2,18 @@ import ballerina/log;
 import ballerina/http;
 
 configurable string gitPAT = ?;
-configurable string gitORG= ?;
-configurable string REPO_NAME= ?;
-// configurable string IS_PUBLIC = ?;
-// configurable string DESC = ?;
-// configurable string IS_ISSUES = ?;
+// configurable string gitORG= ?;
+// configurable string REPO_NAME= ?;
+
 
 public function main(string orgName, string repoName, string isPublic, string repoDesc, string enableIssues) returns error? {
     do {
-        string org = orgName != "" ? orgName : gitORG;
-        string repo = repoName !="" ? repoName : REPO_NAME;
+        // string org = orgName != "" ? orgName : gitORG;
+        // string repo = repoName !="" ? repoName : REPO_NAME;
+        string org = orgName;
+        string repo = repoName;
         boolean isRepoPublic = isPublic == "true"? true: false;
         boolean hasIssues = enableIssues =="true"? true:false;
-
-        //string orgName, string repoName, string isPublic, string repoDesc, string enableIssues
-
-        //Getting all the values from the .env
-        // string org = gitORG;
-        // string repo = REPO_NAME;
-        // boolean isRepoPublic = IS_PUBLIC == "true"? true:false;
-        // string repoDesc = DESC;
-        // boolean hasIssues = IS_ISSUES == "true"? true : false;
-
-
-        // string org = "devant-test-org";
-        // string repo = "from-devant";
-        // boolean isRepoPublic = false;
-        // boolean hasIssues = true;
 
         string apirUrl = string `https://api.github.com/orgs/${org}/repos`;
 
