@@ -1,13 +1,3 @@
-
-[senura.repo_creation]
-gitPAT = "<PAT>"
-# gitORG = "devant-test-org"
-# REPO_NAME ="repo-name"
-
-
-
-
-
 # Configuration file for "repo_creation"
 # 
 # This file contains configuration values for configurable variables in your Ballerina code.
@@ -17,3 +7,6 @@ gitPAT = "<PAT>"
 # https://ballerina.io/learn/provide-values-to-configurable-variables/#provide-via-toml-syntax
 #
 # Note: This file is automatically added to .gitignore to protect sensitive information.
+
+[senura.repo_creation]
+gitPAT = "<PAT>"
