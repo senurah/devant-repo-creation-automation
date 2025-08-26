@@ -1,9 +1,11 @@
 
 [senura.repo_creation]
 gitPAT = "<PAT>"
-# gitORG = "devant-test-org"
-# REPO_NAME ="repo-name"
-
+gitORG = "devant-test-org"
+REPO_NAME ="repo-name"
+# IS_PUBLIC="false"
+# DESC="Description"
+# IS_ISSUES="true"
 
 
 
