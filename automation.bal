@@ -2,9 +2,14 @@ import ballerina/log;
 import ballerina/http;
 
 configurable string gitPAT = ?;
+// configurable string gitORG= ?;
+// configurable string REPO_NAME= ?;
+
 
 public function main(string orgName, string repoName, string isPublic, string repoDesc, string enableIssues) returns error? {
     do {
+        // string org = orgName != "" ? orgName : gitORG;
+        // string repo = repoName !="" ? repoName : REPO_NAME;
         string org = orgName;
         string repo = repoName;
         boolean isRepoPublic = isPublic == "true"? true: false;
