@@ -39,7 +39,7 @@ public function main(string orgName, string repoName, string isPublic, string re
             return error(string `Failed to create the repository : ${response.statusCode}`);
         }
     } on fail error e {
-        log:printError("Error occurred", 'error = e);
+        log:printError("Error occurred :", 'error = e);
         return e;
     }
 }
