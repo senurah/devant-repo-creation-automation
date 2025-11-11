@@ -88,3 +88,28 @@ configurations:
               # +optional default value is string if not specified
               # Allowed types - string, number, boolean, secret, object, array
               type: number
+#Runtime Arguments sample- test
+runtimeArguments:
+    - name: orgName
+      type: string
+
+    - name: repoName
+      type: string
+  
+    - name: isPulic
+      type: string
+      prefix: -age
+
+    - name: repoDesc
+      type: string
+      prefix: --description
+      delimeter: =
+      
+    - name: hasIssues
+      type: string
+      prefix: --hasIssues
+      delimeter: =
+
+    - name: allowedIPs
+      type: string
+      repeat: true
