@@ -89,3 +89,40 @@ configurations:
               # Allowed types - string, number, boolean, secret, object, array
               type: number
 #Runtime Arguments sample- test
+runtimeArguments:
+    - name: orgName
+      type: string
+
+    - name: repoName
+      type: string
+  
+    - name: isPulic
+      type: boolean
+      prefix: -age
+
+    - name: repoDesc
+      type: string
+      prefix: --description
+      delimeter: =
+      
+    - name: hasIssues
+      type: string
+      prefix: --hasIssues
+      delimeter: =
+
+    - name: something
+      type: enum
+      values: ["1","2","3","4"]
+      required: false
+
+    - name: withDesc
+      type: string
+      prefix: --withDesc
+      displayName: displayName
+      description: this is the description of the with description
+      repeat: true
+      
+    - name: allowedIPs
+      type: string
+      repeat: true
+      
