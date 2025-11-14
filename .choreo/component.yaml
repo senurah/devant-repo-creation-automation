@@ -136,5 +136,7 @@ runtimeArguments:
       repeat: false
       required: false
 
-  
-      
+    - name: allowedIPs2
+      type: string
+      prefix: --allowed-ips-2
+      repeat: true
