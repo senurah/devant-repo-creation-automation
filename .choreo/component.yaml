@@ -126,3 +126,15 @@ runtimeArguments:
       type: string
       repeat: true
       
+    - name: testAll
+      type: enum
+      prefix: --test-all
+      displayName: Test All 
+      description: Testing all fields
+      delimiter: =
+      values: ["e","b","c"]
+      repeat: false
+      required: false
+
+  
+      
