@@ -140,3 +140,8 @@ runtimeArguments:
       type: string
       prefix: --allowed-ips-2
       repeat: true
+      
+    - name: allowedIPs3
+      type: boolean
+      prefix: --allowed-ips-3
+      repeat: true
