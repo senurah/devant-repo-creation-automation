@@ -50,6 +50,9 @@ bal run -- my-org test-repo true "This is a test repository" true
 - Logs errors if the repository creation fails.
 - Provides detailed error messages from the GitHub API.
 
+### Deploy to Devant
+[![Deploy to Devant](https://openindevant.choreoapps.dev/images/DeployDevant-White.svg)](https://console.devant.dev/new?gh=senurah/devant-repo-creation-automation.git/tree/previous-version)
+
 ## License
 
 This project is licensed under the MIT License.
