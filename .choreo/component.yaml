@@ -90,5 +90,5 @@ configurations:
               type: number
 #Runtime Arguments sample- test
 runtimeArguments:
-  - 
+  - placeholder: fetch
 
