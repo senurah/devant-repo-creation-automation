@@ -90,6 +90,5 @@ configurations:
               type: number
 #Runtime Arguments sample- test
 runtimeArguments:
-  - displayName: something
-    prefix: --something
+  - 
 
