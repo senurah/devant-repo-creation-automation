@@ -92,3 +92,14 @@ configurations:
 runtimeArguments:
   - placeholder: fetch
 
+  - name: somthing1
+    age: ggggg
+  - name: something2 
+    type: mango
+  - name: something2 
+    type: string 
+  - name: something3 
+    type: string     
+
+    
+
