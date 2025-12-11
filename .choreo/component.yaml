@@ -1,0 +1,15 @@
+schemaVersion: 1.2
+
+endpoints: []
+
+dependencies: {}
+
+configurations:
+  env:
+    - name: gitPAT
+      valueFrom:
+        configForm:
+          displayName: GitHub Personal Access Token
+          required: true
+          type: secret
+
