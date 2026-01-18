@@ -16,9 +16,11 @@ configurations:
 runtimeArguments:
     - name: orgName
       type: string
+      required: true
 
     - name: repoName
       type: string
+      required: true
   
     - name: isPulic
       type: boolean
