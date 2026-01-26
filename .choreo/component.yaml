@@ -37,6 +37,11 @@ runtimeArguments:
       type: enum
       values: ["true","false"]
       description: enabled repository issue
+
+    - name: newArg
+      type: string
+      displayName: Repetition?
+      repeat: true
       
       
 
