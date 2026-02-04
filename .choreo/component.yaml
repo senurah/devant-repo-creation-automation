@@ -41,7 +41,7 @@ runtimeArguments:
     - name: prefixValue
       type: string
       prefix: --thisshould-be-there
-      delimeter: =
+      delimiter: =
 
     - name: booleanValue1
       type: boolean
@@ -50,7 +50,7 @@ runtimeArguments:
     - name: booleanValue2
       type: boolean
       prefix: "--this-Valid-Prefix2"
-      delimeter: "="
+      delimiter: "="
       description: Is this visible
 
       #repeat string
@@ -65,6 +65,7 @@ runtimeArguments:
       displayName: Repeat Enum -with checkboxes
       values:  ["1","2","3"]
       prefix: -thisIsthePrefix
+      repeat: true
       
       
       
