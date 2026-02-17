@@ -38,34 +38,35 @@ runtimeArguments:
       values: ["true","false"]
       description: enabled repository issue
 
-    - name: prefixValue
-      type: string
-      prefix: --thisshould-be-there
-      delimiter: =
+# test scenario
+    # - name: prefixValue
+    #   type: string
+    #   prefix: --thisshould-be-there
+    #   delimiter: =
 
-    - name: booleanValue1
-      type: boolean
-      prefix: "--this-Valid-Prefix"
+    # - name: booleanValue1
+    #   type: boolean
+    #   prefix: "--this-Valid-Prefix"
 
-    - name: booleanValue2
-      type: boolean
-      prefix: "--this-Valid-Prefix2"
-      delimiter: "="
-      description: Is this visible
+    # - name: booleanValue2
+    #   type: boolean
+    #   prefix: "--this-Valid-Prefix2"
+    #   delimiter: "="
+    #   description: Is this visible
 
-      #repeat string
-    - name: newArg
-      type: string
-      displayName: Repetition with String 
-      repeat: true
+    #   #repeat string
+    # - name: newArg
+    #   type: string
+    #   displayName: Repetition with String 
+    #   repeat: true
 
-      #reapetEnum
-    - name: repeatEnum
-      type: enum
-      displayName: Repeat Enum -with checkboxes
-      values:  ["1","2","3"]
-      prefix: -thisIsthePrefix
-      repeat: true
+    #   #reapetEnum
+    # - name: repeatEnum
+    #   type: enum
+    #   displayName: Repeat Enum -with checkboxes
+    #   values:  ["1","2","3"]
+    #   prefix: -thisIsthePrefix
+    #   repeat: true
       
       
       
