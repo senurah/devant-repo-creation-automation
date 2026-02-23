@@ -72,17 +72,17 @@ runtimeArguments:
       type: number
       displayName: number arg
 
-    - name: intType
-      type: int
+    # - name: intType
+    #   type: int
 
-    - name: floatType
-      type: float
+    # - name: floatType
+    #   type: float
 
-    - name: decimalType
-      type: decimal
+    # - name: decimalType
+    #   type: decimal
 
-    - name: byteType
-      type: decimal
+    # - name: byteType
+    #   type: decimal
 
     - name: testTwo
       type: string
