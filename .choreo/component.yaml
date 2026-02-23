@@ -67,6 +67,27 @@ runtimeArguments:
       values:  ["1","2","3"]
       prefix: -thisIsthePrefix
       repeat: true
+
+    - name: numberType
+      type: number
+      displayName: number arg
+
+    - name: intType
+      type: int
+
+    - name: floatType
+      type: float
+
+    - name: decimalType
+      type: decimal
+
+    - name: byteType
+      type: decimal
+
+    - name: testTwo
+      type: string
+      repeat: true
+      prefix: -prefixxx
       
       
       
