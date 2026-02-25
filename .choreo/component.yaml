@@ -88,6 +88,10 @@ runtimeArguments:
       type: string
       repeat: true
       prefix: -prefixxx
+
+    - name: testForPromotion
+      type: enum
+      values: ["this visible", "this visible"]
       
       
       
