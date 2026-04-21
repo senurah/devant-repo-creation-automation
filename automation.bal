@@ -8,12 +8,12 @@ configurable string REPO_NAME= ?;
 // configurable string DESC = ?;
 // configurable string IS_ISSUES = ?;
 
-public function main(string orgName, string repoName, string isPublic, string repoDesc, string enableIssues) returns error? {
+public function main() returns error? {
     do {
-        string org = orgName != "" ? orgName : gitORG;
-        string repo = repoName !="" ? repoName : REPO_NAME;
-        boolean isRepoPublic = isPublic == "true"? true: false;
-        boolean hasIssues = enableIssues =="true"? true:false;
+        string org = "test-org";
+        string repo = "repo";
+        boolean isRepoPublic = false;
+        boolean hasIssues = true;
 
         //string orgName, string repoName, string isPublic, string repoDesc, string enableIssues
 
