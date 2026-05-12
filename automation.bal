@@ -3,12 +3,14 @@ import ballerina/http;
 
 configurable string gitPAT = ?;
 
-public function main(string orgName, string repoName, string isPublic, string repoDesc, string enableIssues) returns error? {
+public function main(string orgName, string repoName, string isPublic, string repoDesc, string enableIssues, string newString) returns error? {
     do {
         string org = orgName;
         string repo = repoName;
         boolean isRepoPublic = isPublic == "true"? true: false;
         boolean hasIssues = enableIssues =="true"? true:false;
+        string newSt = newString; 
+
 
         string apirUrl = string `https://api.github.com/orgs/${org}/repos`;
 
@@ -31,12 +33,14 @@ public function main(string orgName, string repoName, string isPublic, string re
         if(response.statusCode == 201){
             log:printInfo(string `Repository ${repo} created successfully.`);
             json responseBody = check response.getJsonPayload();
-            log:printInfo("Details: "+responseBody.toString());
+            // log:printInfo("Details: "+responseBody.toString());
         }else{
             string errorText = check response.getTextPayload();
             log:printError(`Error occured while creating the Repository:${response.statusCode}`);
             log:printError(errorText);
+            log:printInfo(newSt);
             return error(string `Failed to create the repository : ${response.statusCode}`);
+            
         }
     } on fail error e {
         log:printError("Error occurred :", 'error = e);
